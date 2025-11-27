@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PTE Practice Hub – Modern English Australia</title>
+
+<style>
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --brand:#2c3034;
+  --brand-2:#151d25;
+  --accent:#ffcc00;
+  --ink:#222;
+  --radius:14px;
+  --shadow:0 6px 24px rgba(0,0,0,0.12);
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:var(--brand);
+  color:#fff;
+  padding:1rem;
+  text-align:center;
+  position:relative;
+}
+
+header .home-btn-top{
+  position:absolute;
+  top:16px;
+  left:16px;
+  text-decoration:none;
+  color:#fff;
+  background:var(--brand-2);
+  padding:6px 12px;
+  border-radius:6px;
+  font-size:0.9rem;
+}
+header .home-btn-top:hover{
+  background:#0077cc;
+}
+
+/* ===== MAIN ===== */
+main{
+  flex:1;
+  max-width:1000px;
+  margin:40px auto;
+  padding:20px;
+  text-align:center;
+}
+
+main h1{
+  font-size:2.2rem;
+  margin-bottom:10px;
+  color:var(--brand);
+}
+
+p.subtitle{
+  margin-top:-6px;
+  margin-bottom:30px;
+  font-size:1.1rem;
+  color:#444;
+}
+
+/* ===== GRID TILES ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:20px;
+}
+
+.tile{
+  background:var(--card);
+  padding:30px 20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  text-decoration:none;
+  color:var(--brand);
+  font-weight:600;
+  font-size:1.2rem;
+  transition:transform .2s, box-shadow .2s;
+  border:2px solid transparent;
+}
+
+.tile:hover{
+  transform:translateY(-4px);
+  border-color:var(--accent);
+  box-shadow:0 8px 30px rgba(0,0,0,0.22);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  margin-top:40px;
+  padding:12px;
+  background:var(--brand);
+  color:#fff;
+  text-align:center;
+  font-size:0.85rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- FIXED home button -->
+  <a class="home-btn-top" href="https://ieltspteaustralianexaminertutor.com/">🏠 Home</a>
+  <h1>MODERN ENGLISH AUSTRALIA</h1>
+</header>
+
+<main>
+  <h1>TEST – Listening, Writing, Grammar</h1>
+  <p class="subtitle">Choose a section to begin</p>
+
+  <div class="grid">
+    <a class="tile" href="part1-listen&write.html">🎧 Part 1 – Repeat Sentence<br>Write What You Hear</a>
+    <a class="tile" href="part2-drag-sentences.html">🧩 Part 2 – Drag Words<br>Form Correct Sentences</a>
+    <a class="tile" href="part3-reported-speech.html">✏️ Part 3 – Rewrite as Reported Speech</a>
+  </div>
+</main>
+
+<footer>
+  © Modern English Australia · Koala Spies Sydney · 2025
+</footer>
+
+</body>
+</html>
